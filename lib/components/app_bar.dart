@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants/assets.dart';
+import '../utils/routes.dart';
 
 class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
   const ProfileAppBar({super.key});
@@ -15,8 +16,20 @@ class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         Padding(
           padding: const EdgeInsets.only(right: 10),
-          child: CircleAvatar(
-            child: Image.asset(Assets.iconProfile),
+          child: PopupMenuButton(
+            icon: CircleAvatar(
+              child: Image.asset(Assets.iconProfile),
+            ),
+            offset: const Offset(0.0, kToolbarHeight),
+            onSelected: (int val) {
+              Navigator.pushReplacementNamed(context, Routes.login);
+            },
+            itemBuilder: (BuildContext context) => <PopupMenuEntry<int>>[
+              const PopupMenuItem<int>(
+                value: 1,
+                child: Text('Logout'),
+              ),
+            ],
           ),
         ),
       ],
