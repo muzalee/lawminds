@@ -39,7 +39,7 @@ class Styles {
     disabledForegroundColor: Colors.white,
     padding: const EdgeInsets.symmetric(
       horizontal: 10,
-      vertical: 20,
+      vertical: 15,
     ),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(8),

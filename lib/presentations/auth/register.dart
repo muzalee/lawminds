@@ -25,7 +25,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return PrimaryLayout(
       body: Column(
         children: [
-          const Text('Complete the form below for your registration', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          const Text('Register Now!', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           const SizedBox(height: 40),
           Form(
             key: _formKey,

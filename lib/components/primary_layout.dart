@@ -29,27 +29,26 @@ class PrimaryLayout extends StatelessWidget {
               child: Column(
                 children: [
                   const SizedBox(height: kToolbarHeight),
-                  Expanded(
-                    child: Center(
-                      child: Image.asset(Assets.logo, width: MediaQuery.of(context).size.width * 0.4),
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      child: Image.asset(Assets.logo, width: MediaQuery.of(context).size.width * 0.3),
                     ),
                   ),
-                  Container(
-                    constraints: BoxConstraints(
-                      minHeight: 100,
-                      maxHeight: MediaQuery.of(context).size.height - 10,
-                    ),
-                    width: MediaQuery.of(context).size.width,
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topRight: Radius.circular(40),
-                        topLeft: Radius.circular(40),
+                  Expanded(
+                    child: Container(
+                      alignment: Alignment.center,
+                      decoration: const BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(40),
+                          topLeft: Radius.circular(40),
+                        ),
+                        color: Colors.white,
                       ),
-                      color: Colors.white,
-                    ),
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
-                      child: body,
+                      child: SingleChildScrollView(
+                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                        child: body,
+                      ),
                     ),
                   ),
                 ],

@@ -22,6 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return PrimaryLayout(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text('Welcome Back!', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
           const SizedBox(height: 40),
@@ -93,7 +94,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ],
           ),
-          const SizedBox(height: 60),
         ],
       ),
     );
