@@ -14,15 +14,15 @@ class ChatProvider with ChangeNotifier {
     Topic('Garden Leave', 'termination', Assets.leave),
     Topic('Workplace Safety', 'safety', Assets.safety),
   ];
-  String? _selectedTopic;
+  Topic? _selectedTopic;
   final List<types.Message> _messages = [];
   final user = const types.User(id: 'user', firstName: 'You');
 
   List<Topic> get topics => _topics;
-  String? get selectedTopic => _selectedTopic;
+  Topic? get selectedTopic => _selectedTopic;
   List<types.Message> get messages => _messages;
 
-  set selectedTopic(String? val) {
+  set selectedTopic(Topic? val) {
     _selectedTopic = val;
     notifyListeners();
   }

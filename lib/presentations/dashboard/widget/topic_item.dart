@@ -21,7 +21,7 @@ class TopicItem extends StatelessWidget {
         ),
         child: InkWell(
           onTap: () {
-            context.read<ChatProvider>().selectedTopic = item.value;
+            context.read<ChatProvider>().selectedTopic = item;
             Navigator.pushNamed(context, Routes.chat);
           },
           child: Column(
