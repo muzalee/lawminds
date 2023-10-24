@@ -62,7 +62,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       return 'Email is required!';
                     }
 
-                    if (Validators.isValidEmail(val)) {
+                    if (!Validators.isValidEmail(val)) {
                       return 'Email is invalid!';
                     }
 
