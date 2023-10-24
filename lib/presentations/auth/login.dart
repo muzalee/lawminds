@@ -102,6 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
   //action functions
   void onSubmit() {
     if (_formKey.currentState!.validate()) {
+      context.read().
       Navigator.pushReplacementNamed(context, Routes.dashboard);
     }
   }

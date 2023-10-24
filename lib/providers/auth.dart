@@ -34,8 +34,4 @@ class AuthProvider with ChangeNotifier {
     _isRegisterProcess = val;
     notifyListeners();
   }
-
-  void login() {
-
-  }
 }
