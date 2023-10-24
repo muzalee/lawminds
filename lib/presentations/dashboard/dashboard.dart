@@ -36,7 +36,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     children: [
       Text('Hi ${context.watch<UserProvider>().name}',
           style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
-      const Text('Welcome to Law Minds!',
+      const Text('Welcome to LawMinds!',
           style: TextStyle(fontSize: 18, color: Colors.indigo)),
       const Divider(color: Colors.indigo, thickness: 0.5),
       const SizedBox(height: 20),
