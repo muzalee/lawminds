@@ -108,6 +108,7 @@ class ChatProvider with ChangeNotifier {
   }
 
   void chatWithStreamEvent(String message) {
+    _sessionId ??= const Uuid().v4();
     isTyping = true;
     String? answer;
     ChatService().chatWithStreamEvent(message, _sessionId!, (msg) {
