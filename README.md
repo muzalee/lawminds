@@ -8,7 +8,7 @@ API from [jvelezmagic/lawminds-service](https://github.com/jvelezmagic/lawminds-
 
 ## About
 
-Lawminds is a chatbot developed for the Legaltech AI Challenge, where it won first place. Our goal is to provide legal assistance and streamline legal processes using AI technology.
+Lawminds is a chatbot developed for the [Legaltech AI Challenge](https://lablab.ai/event/legaltech-ai-hackathon/lawminds/lawminds), where it won first place. Our goal is to provide legal assistance and streamline legal processes using AI technology.
 
 ## Features
 
